@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser= require("body-parser");
+const PORT = process.env.PORT || 5000;
 
 const app=express();
 app.use(bodyParser.json());
@@ -49,7 +50,7 @@ app.delete("/products/:id",(req,res)=>{
     res.json({sucsess: true});
 });
 
-server.listen(process.env.PORT || port);
+app.listen(PORT,()=>console.log("server rabotaet"));
 // app.listen(5000,()=> console.log("listening 5000"));
 
 
