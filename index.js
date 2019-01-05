@@ -28,7 +28,7 @@ const products=[
 ];
 
 
-// app.get('/',(req,res)=>res.send("Hi4"));
+app.get('/',(req,res)=>res.send("Hi4"));
 app.get('/products',(req,res)=>res.json(products));
 app.post('/products',(req,res)=>{
     products.push(req.body);

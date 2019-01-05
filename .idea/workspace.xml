@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25a9f8c5-8d8f-4284-91ce-bae412651c8a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-js-getting-started" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-getting-started" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-js-getting-started/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/node-js-getting-started/Procfile" afterDir="false" />
     </list>
@@ -35,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="272">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -118,12 +118,12 @@
       <updated>1546619524211</updated>
       <workItem from="1546619525378" duration="2316000" />
       <workItem from="1546624607888" duration="10036000" />
-      <workItem from="1546693514609" duration="1457000" />
+      <workItem from="1546693514609" duration="2344000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13809000" />
+    <option name="totallyTimeSpent" value="14696000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -136,6 +136,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498998" visible="true" weight="0.21546261" />
       <window_info id="Structure" order="1" sideWeight="0.501002" side_tool="true" weight="0.24968314" />
@@ -149,7 +150,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293011" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.30376345" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.30376345" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -176,8 +177,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="272">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
