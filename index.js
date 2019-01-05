@@ -1,5 +1,7 @@
 const express = require("express");
 const bodyParser= require("body-parser");
+var qs = require('querystring');
+
 const PORT = process.env.PORT || 5000;
 
 const MongoClient = require("mongodb").MongoClient;
@@ -14,17 +16,17 @@ const mongoClient = new MongoClient(url, { useNewUrlParser: true });
 
 
 
-
-mongoClient.connect(function(err, client){
-    const db = client.db("nastasiy");
-
-    const cursor = db.collection("items").find();
-        cursor.each(function(err, doc) {
-
-            console.log(doc);
-
-        });
-});
+//
+// mongoClient.connect(function(err, client){
+//     const db = client.db("nastasiy");
+//
+//     const cursor = db.collection("items").find();
+//         cursor.each(function(err, doc) {
+//
+//             console.log(doc);
+//
+//         });
+// });
 
 
 
@@ -36,7 +38,7 @@ mongoClient.connect(function(err, client){
 const app=express();
 // let server = require('http').Server(app);
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 const products=[
     {
@@ -74,7 +76,7 @@ app.put("/products/:id",(req,res)=>{
    const newProduct={...product,...req.body};
    products[productIndex]=newProduct;
 
-    createItem(11,"nameph",200);
+    addItem(11,"nameph",200);
    res.json({sucsess: true});
 });
 
@@ -85,16 +87,40 @@ app.delete("/products/:id",(req,res)=>{
     res.json({sucsess: true});
 });
 
-// server.listen(PORT,()=>console.log("server rabotaet"));
-// app.listen(5000,()=> console.log("listening 5000"));
+
 app.listen(process.env.PORT || 5000, function(){
     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
+
+// app.use(express.bodyParser());
+app.use(bodyParser.json());
+
+
+app.post('/additem',(req,res)=>{
+    let id="";
+    let name="";
+    let price =0;
+    let body = '';
+    req.on('data', chunk => {
+        body += chunk.toString(); // convert Buffer to string
+    });
+    req.on('end', () => {
+        var post = qs.parse(body);
+
+        console.log(body);
+        id=post.id;
+        name=post.name;
+        price=post.price;
+        addItem(id, name, price);
+        res.end({"message":"OK"});
+    });
+
 });
 
 
 
 
-function createItem(id,name,price){
+function addItem(id,name,price){
     mongoClient.connect(function(err, client){
         const db = client.db("nastasiy");
 
