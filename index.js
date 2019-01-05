@@ -3,7 +3,7 @@ const bodyParser= require("body-parser");
 const PORT = process.env.PORT || 5000;
 
 const app=express();
-let server = require('http').Server(app);
+// let server = require('http').Server(app);
 
 app.use(bodyParser.json());
 
@@ -52,7 +52,8 @@ app.delete("/products/:id",(req,res)=>{
     res.json({sucsess: true});
 });
 
-server.listen(PORT,()=>console.log("server rabotaet"));
+// server.listen(PORT,()=>console.log("server rabotaet"));
 // app.listen(5000,()=> console.log("listening 5000"));
-
-
+app.listen(process.env.PORT || 5000, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
