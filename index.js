@@ -112,7 +112,7 @@ app.post('/additem',(req,res)=>{
         name=post.name;
         price=post.price;
         addItem(id, name, price);
-        res.end({"message":"OK"});
+        res.end(JSON.stringify({ msg: "OK" }));
     });
 
 });
