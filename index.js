@@ -7,20 +7,10 @@ const url = "mongodb://madcat:masterminde+1@ds153380.mlab.com:53380/nastasiy";
 const mongoClient = new MongoClient(url, { useNewUrlParser: true });
 // создаем объект MongoClient и передаем ему строку подключения
 
-mongoClient.connect(function(err, client){
-    const db = client.db("nastasiy");
 
-    const collection = db.collection("items");
-    let item = {name: "Tom", id:"2", price: 700};
-    collection.insertOne(item, function(err, result){
 
-        if(err){
-            return console.log(err);
-        }
-        console.log(result.ops);
-        client.close();
-    });
-});
+
+
 
 
 
@@ -83,6 +73,8 @@ app.put("/products/:id",(req,res)=>{
    const productIndex= products.indexOf(product);
    const newProduct={...product,...req.body};
    products[productIndex]=newProduct;
+
+    createItem(11,"nameph",200);
    res.json({sucsess: true});
 });
 
@@ -98,3 +90,23 @@ app.delete("/products/:id",(req,res)=>{
 app.listen(process.env.PORT || 5000, function(){
     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
+
+
+
+
+function createItem(id,name,price){
+    mongoClient.connect(function(err, client){
+        const db = client.db("nastasiy");
+
+        const collection = db.collection("items");
+        let item = {name: "Tom", id:"2", price: 700};
+        collection.insertOne(item, function(err, result){
+
+            if(err){
+                return console.log(err);
+            }
+            console.log(result.ops);
+            client.close();
+        });
+    });
+}
