@@ -99,7 +99,7 @@ function createItem(id,name,price){
         const db = client.db("nastasiy");
 
         const collection = db.collection("items");
-        let item = {name: "Tom", id:"2", price: 700};
+        let item = {name: id, id:name, price: price};
         collection.insertOne(item, function(err, result){
 
             if(err){
