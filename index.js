@@ -49,7 +49,7 @@ app.delete("/products/:id",(req,res)=>{
     res.json({sucsess: true});
 });
 
-
-app.listen(5000,()=> console.log("listening 5000"));
+server.listen(process.env.PORT || port);
+// app.listen(5000,()=> console.log("listening 5000"));
 
 
