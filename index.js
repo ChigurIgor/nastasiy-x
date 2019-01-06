@@ -150,9 +150,9 @@ mongoClient.connect(function(err, client){
             console.log(doc);
 
         });
-    console.log(answer);
+    console.log(answer+"dfgdf");
 
-    res.end(JSON.stringify(answer));
+    res.end(JSON.stringify(answer+"dfgdf"));
 
 
 });
