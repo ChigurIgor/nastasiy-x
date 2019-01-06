@@ -139,13 +139,19 @@ function msgGet(id,res){
 
 mongoClient.connect(function(err, client){
     const db = client.db("nastasiy");
+    let answer=[];
 
     const cursor = db.collection("items").find();
         cursor.each(function(err, doc) {
-            res.end(JSON.stringify(doc));
 
+            answer.push(doc);
             console.log(doc);
 
         });
+    console.log(answer);
+
+    res.end(JSON.stringify(answer));
+
+
 });
 }

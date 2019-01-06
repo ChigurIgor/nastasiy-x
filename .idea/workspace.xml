@@ -34,8 +34,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
+            <state relative-caret-position="455">
+              <caret line="142" column="14" selection-start-line="142" selection-start-column="14" selection-end-line="142" selection-end-column="14" />
+              <folding>
+                <element signature="e#2034#2441#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,7 +120,7 @@
       <updated>1546619524211</updated>
       <workItem from="1546619525378" duration="2316000" />
       <workItem from="1546624607888" duration="10036000" />
-      <workItem from="1546693514609" duration="14105000" />
+      <workItem from="1546693514609" duration="15706000" />
     </task>
     <task id="LOCAL-00001" summary="restart commiting">
       <created>1546713891843</created>
@@ -161,11 +164,46 @@
       <option name="project" value="LOCAL" />
       <updated>1546722467457</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add  msgAdd func">
+      <created>1546794044086</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1546794044086</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add  msgAdd func">
+      <created>1546794217114</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1546794217114</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add  msgGet func">
+      <created>1546794911527</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1546794911527</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add  msgGet func">
+      <created>1546795061620</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1546795061620</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add  msgGet func&#10;adding sendback">
+      <created>1546795224189</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1546795224189</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26457000" />
+    <option name="totallyTimeSpent" value="28058000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -206,7 +244,10 @@
     <MESSAGE value="restart commiting" />
     <MESSAGE value="working on requests" />
     <MESSAGE value="made addItem" />
-    <option name="LAST_COMMIT_MESSAGE" value="made addItem" />
+    <MESSAGE value="add  msgAdd func" />
+    <MESSAGE value="add  msgGet func" />
+    <MESSAGE value="add  msgGet func&#10;adding sendback" />
+    <option name="LAST_COMMIT_MESSAGE" value="add  msgGet func&#10;adding sendback" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package-lock.json">
@@ -253,8 +294,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
+        <state relative-caret-position="455">
+          <caret line="142" column="14" selection-start-line="142" selection-start-column="14" selection-end-line="142" selection-end-column="14" />
+          <folding>
+            <element signature="e#2034#2441#0" />
+          </folding>
         </state>
       </provider>
     </entry>
