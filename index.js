@@ -112,7 +112,7 @@ app.post('/msgadd',(req,res)=>{
         email=post.email;
         name=post.name;
         phone=post.phone;
-        msgtxt=post.msgtext;
+        msgtxt=post.msgtxt;
         msgAdd(email, msgtxt,name, phone);
         res.end(JSON.stringify({ msg: "OK" }));
     });
