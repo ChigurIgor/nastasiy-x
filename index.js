@@ -96,10 +96,11 @@ app.listen(process.env.PORT || 5000, function(){
 app.use(bodyParser.json());
 
 
-app.post('/additem',(req,res)=>{
-    let id="";
+app.post('/msgadd',(req,res)=>{
+    let email="";
     let name="";
-    let price =0;
+    let phone ="";
+    let msgtxt="";
     let body = '';
     req.on('data', chunk => {
         body += chunk.toString(); // convert Buffer to string
@@ -108,10 +109,11 @@ app.post('/additem',(req,res)=>{
         var post = qs.parse(body);
 
         console.log(body);
-        id=post.id;
+        email=post.email;
         name=post.name;
-        price=post.price;
-        addItem(id, name, price);
+        phone=post.phone;
+        msgtxt=post.msgtext;
+        msgAdd(email, msgtxt,name, phone);
         res.end(JSON.stringify({ msg: "OK" }));
     });
 
@@ -120,13 +122,13 @@ app.post('/additem',(req,res)=>{
 
 
 
-function addItem(id,name,price){
+function msgAdd(email, msgtxt,name, phone){
     mongoClient.connect(function(err, client){
         const db = client.db("nastasiy");
 
         const collection = db.collection("items");
-        let item = {name: id, id:name, price: price};
-        collection.insertOne(item, function(err, result){
+        let msg = {email: email, msgtxt:msgtxt, name: name, phone:phone};
+        collection.insertOne(msg, function(err, result){
 
             if(err){
                 return console.log(err);
