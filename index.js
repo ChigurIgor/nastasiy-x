@@ -142,7 +142,7 @@ mongoClient.connect(function(err, client){
 
     const cursor = db.collection("items").find();
         cursor.each(function(err, doc) {
-            res.end(JSON.stringify({ msg: "OK222" }));
+            res.end(JSON.stringify(doc));
 
             console.log(doc);
 
