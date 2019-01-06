@@ -145,7 +145,8 @@ mongoClient.connect(function(err, client){
     db.collection("items").find().toArray(function(err, documents) {
         console.log(documents);
 
-        res.end(JSON.stringify(documents));
+        // res.end(JSON.stringify(documents));
+        res.end(documents);
 
     });
 
