@@ -98,7 +98,7 @@ app.post('/msgadd',(req,res)=>{
 
 });
 
-app.post('/msgget',(req,res)=>{
+app.post('/msggetall',(req,res)=>{
     let id="";
 
     let body = '';
@@ -135,7 +135,7 @@ function msgAdd(email, msgtxt,name, phone){
 }
 
 
-function msgGet(id,res){
+function msgGetAll(id,res){
 
 mongoClient.connect(function(err, client){
     const db = client.db("nastasiy");
@@ -145,8 +145,7 @@ mongoClient.connect(function(err, client){
     db.collection("items").find().toArray(function(err, documents) {
         console.log(documents);
 
-        // res.end(JSON.stringify(documents));
-        res.end(documents);
+        res.end(JSON.stringify(documents));
 
     });
 
