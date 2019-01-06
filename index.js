@@ -150,7 +150,7 @@ mongoClient.connect(function(err, client){
             console.log(doc);
 
         });
-    console.log(answer+"dfgdf");
+    console.log(cursor.toArray());
 
     res.end(JSON.stringify(answer+"dfgdf"));
 

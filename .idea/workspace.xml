@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="25a9f8c5-8d8f-4284-91ce-bae412651c8a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,8 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
+            <state relative-caret-position="540">
+              <caret line="154" column="41" selection-start-line="154" selection-start-column="41" selection-end-line="154" selection-end-column="41" />
               <folding>
                 <element signature="e#2034#2441#0" />
               </folding>
@@ -120,7 +119,7 @@
       <updated>1546619524211</updated>
       <workItem from="1546619525378" duration="2316000" />
       <workItem from="1546624607888" duration="10036000" />
-      <workItem from="1546693514609" duration="16299000" />
+      <workItem from="1546693514609" duration="16785000" />
     </task>
     <task id="LOCAL-00001" summary="restart commiting">
       <created>1546713891843</created>
@@ -213,11 +212,32 @@
       <option name="project" value="LOCAL" />
       <updated>1546796030176</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add  msgGet func&#10;adding sendback">
+      <created>1546796226584</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1546796226584</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add  msgGet func&#10;adding sendback">
+      <created>1546796456051</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1546796456051</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add  msgGet func&#10;adding sendback">
+      <created>1546796612007</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1546796612007</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28651000" />
+    <option name="totallyTimeSpent" value="29137000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -308,8 +328,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
+        <state relative-caret-position="540">
+          <caret line="154" column="41" selection-start-line="154" selection-start-column="41" selection-end-line="154" selection-end-column="41" />
           <folding>
             <element signature="e#2034#2441#0" />
           </folding>
