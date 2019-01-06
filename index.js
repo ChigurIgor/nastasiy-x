@@ -142,18 +142,13 @@ mongoClient.connect(function(err, client){
     var answer="0";
     var allProductsArray = db.collection("items").find().toArray();
 
-    // const cursor = db.collection("items").find();
-        // cursor.each(function(err, doc) {
-        //
-        //     // answer.push(doc);
-        //     var answer="1";
-        //     console.log(answer);
-        //     console.log(doc);
-        //
-        // });
-    // console.log(cursor.toArray());
-    console.log(allProductsArray);
-    res.end(JSON.stringify(allProductsArray));
+    db.collection("items").find().toArray(function(err, documents) {
+        console.log(documents);
+
+        res.end(JSON.stringify({ msg: "OK111" }));
+
+        db.close();
+    });
 
 
 });
