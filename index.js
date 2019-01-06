@@ -117,21 +117,33 @@ app.post('/msggetall',(req,res)=>{
 });
 
 
-function msgAdd(email, msgtxt,name, phone){
-    mongoClient.connect(function(err, client){
+ function msgAdd(email, msgtxt, name, phone) {
+
+     mongoClient.connect(async function (err, client) {
         const db = client.db("nastasiy");
 
         const collection = db.collection("items");
-        let msg = {email: email, msgtxt:msgtxt, name: name, phone:phone};
-        collection.insertOne(msg, function(err, result){
-            client.close();
+        let msg = {email: email, msgtxt: msgtxt, name: name, phone: phone};
+         try {
+        await collection.insertOne(msg, function (err, result) {
 
-            if(err){
+            if (err) {
                 return console.log(err);
             }
             console.log(result.ops);
+
         });
+         } finally {
+             if (db) db.close();
+         }
     });
+
+
+
+
+
+
+
 }
 
 
