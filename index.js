@@ -111,7 +111,7 @@ app.post('/msggetall',(req,res)=>{
         console.log(body);
         id=post.id;
 
-        msgGet(id,res);
+        msgGetAll(id,res);
     });
 
 });
