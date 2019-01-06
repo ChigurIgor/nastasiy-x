@@ -135,7 +135,7 @@ function msgAdd(email, msgtxt,name, phone){
 }
 
 
-function msgGet(id){
+function msgGet(id,res){
 
 mongoClient.connect(function(err, client){
     const db = client.db("nastasiy");
