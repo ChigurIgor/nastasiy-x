@@ -139,7 +139,7 @@ function msgGet(id,res){
 
 mongoClient.connect(function(err, client){
     const db = client.db("nastasiy");
-    let answer="";
+    var answer="";
 
     const cursor = db.collection("items").find();
         cursor.each(function(err, doc) {
@@ -149,7 +149,6 @@ mongoClient.connect(function(err, client){
             console.log(doc);
 
         });
-    console.log(answer);
 
     res.end(JSON.stringify(answer));
 
