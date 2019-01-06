@@ -14,27 +14,6 @@ const mongoClient = new MongoClient(url, { useNewUrlParser: true });
 
 
 
-
-
-//
-// mongoClient.connect(function(err, client){
-//     const db = client.db("nastasiy");
-//
-//     const cursor = db.collection("items").find();
-//         cursor.each(function(err, doc) {
-//
-//             console.log(doc);
-//
-//         });
-// });
-
-
-
-
-
-
-
-
 const app=express();
 // let server = require('http').Server(app);
 
@@ -119,7 +98,23 @@ app.post('/msgadd',(req,res)=>{
 
 });
 
+app.post('/msgget',(req,res)=>{
+    let id="";
 
+    let body = '';
+    req.on('data', chunk => {
+        body += chunk.toString(); // convert Buffer to string
+    });
+    req.on('end', () => {
+        var post = qs.parse(body);
+
+        console.log(body);
+        id=post.id;
+
+        msgGet(id,res);
+    });
+
+});
 
 
 function msgAdd(email, msgtxt,name, phone){
@@ -137,4 +132,20 @@ function msgAdd(email, msgtxt,name, phone){
             client.close();
         });
     });
+}
+
+
+function msgGet(id){
+
+mongoClient.connect(function(err, client){
+    const db = client.db("nastasiy");
+
+    const cursor = db.collection("items").find();
+        cursor.each(function(err, doc) {
+            res.end(JSON.stringify({ msg: "OK222" }));
+
+            console.log(doc);
+
+        });
+});
 }
