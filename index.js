@@ -124,12 +124,12 @@ function msgAdd(email, msgtxt,name, phone){
         const collection = db.collection("items");
         let msg = {email: email, msgtxt:msgtxt, name: name, phone:phone};
         collection.insertOne(msg, function(err, result){
+            client.close();
 
             if(err){
                 return console.log(err);
             }
             console.log(result.ops);
-            client.close();
         });
     });
 }
@@ -146,9 +146,12 @@ mongoClient.connect(function(err, client){
         console.log(documents);
 
         res.end(JSON.stringify(documents));
+        client.close();
 
     });
 
 
 });
 }
+
+
