@@ -140,19 +140,20 @@ function msgGet(id,res){
 mongoClient.connect(function(err, client){
     const db = client.db("nastasiy");
     var answer="0";
+    var allProductsArray = db.collection("items").find().toArray();
 
-    const cursor = db.collection("items").find();
-        cursor.each(function(err, doc) {
-
-            // answer.push(doc);
-            var answer="1";
-            console.log(answer);
-            console.log(doc);
-
-        });
-    console.log(cursor.toArray());
-
-    res.end(JSON.stringify(answer+"dfgdf"));
+    // const cursor = db.collection("items").find();
+        // cursor.each(function(err, doc) {
+        //
+        //     // answer.push(doc);
+        //     var answer="1";
+        //     console.log(answer);
+        //     console.log(doc);
+        //
+        // });
+    // console.log(cursor.toArray());
+    console.log(allProductsArray);
+    res.end(JSON.stringify(allProductsArray));
 
 
 });
