@@ -4,7 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/index_old.js" mnemonic="6" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25a9f8c5-8d8f-4284-91ce-bae412651c8a" name="Default Changelist" comment="">
+    <list default="true" id="25a9f8c5-8d8f-4284-91ce-bae412651c8a" name="Default Changelist" comment="working on bugs">
+      <change afterPath="$PROJECT_DIR$/buzoni-af009-firebase-adminsdk-p1b9r-ff3ce0a579.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
@@ -26,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/index_old.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -34,11 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="145" column="14" selection-start-line="145" selection-start-column="8" selection-end-line="145" selection-end-column="14" />
-              <folding>
-                <element signature="e#2034#2441#0" />
-              </folding>
+            <state relative-caret-position="357">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -76,7 +74,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -88,10 +85,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -120,7 +119,12 @@
       <updated>1546619524211</updated>
       <workItem from="1546619525378" duration="2316000" />
       <workItem from="1546624607888" duration="10036000" />
-      <workItem from="1546693514609" duration="17595000" />
+      <workItem from="1546693514609" duration="21979000" />
+      <workItem from="1547303676674" duration="262000" />
+      <workItem from="1547303984439" duration="24000" />
+      <workItem from="1547304083390" duration="295000" />
+      <workItem from="1547654968175" duration="10000" />
+      <workItem from="1555445922483" duration="271000" />
     </task>
     <task id="LOCAL-00001" summary="restart commiting">
       <created>1546713891843</created>
@@ -248,11 +252,60 @@
       <option name="project" value="LOCAL" />
       <updated>1546797274051</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add  msgGet func&#10;adding sendback">
+      <created>1546797636795</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1546797636795</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add  msgGet func&#10;adding sendback">
+      <created>1546797909398</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1546797909398</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add  msgGet func&#10;adding sendback">
+      <created>1546798317286</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1546798317286</updated>
+    </task>
+    <task id="LOCAL-00022" summary="add  msgGetAll func">
+      <created>1546798861318</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1546798861318</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add  msgGetAll func">
+      <created>1546799111939</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1546799111939</updated>
+    </task>
+    <task id="LOCAL-00024" summary="working on bugs">
+      <created>1546803801952</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1546803801952</updated>
+    </task>
+    <task id="LOCAL-00025" summary="working on bugs">
+      <created>1546804471362</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1546804471362</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29947000" />
+    <option name="totallyTimeSpent" value="35193000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -265,7 +318,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498998" visible="true" weight="0.21546261" />
       <window_info id="Structure" order="1" sideWeight="0.501002" side_tool="true" weight="0.24968314" />
@@ -279,7 +331,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293011" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3293011" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.30376345" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.30376345" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -296,7 +348,9 @@
     <MESSAGE value="add  msgAdd func" />
     <MESSAGE value="add  msgGet func" />
     <MESSAGE value="add  msgGet func&#10;adding sendback" />
-    <option name="LAST_COMMIT_MESSAGE" value="add  msgGet func&#10;adding sendback" />
+    <MESSAGE value="add  msgGetAll func" />
+    <MESSAGE value="working on bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on bugs" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package-lock.json">
@@ -337,17 +391,17 @@
     <entry file="file://$PROJECT_DIR$/index_old.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/buzoni-af009-firebase-adminsdk-p1b9r-ff3ce0a579.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="145" column="14" selection-start-line="145" selection-start-column="8" selection-end-line="145" selection-end-column="14" />
-          <folding>
-            <element signature="e#2034#2441#0" />
-          </folding>
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>

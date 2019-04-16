@@ -9,6 +9,14 @@ const url = "mongodb://madcat:masterminde+1@ds153380.mlab.com:53380/nastasiy";
 const mongoClient = new MongoClient(url, { useNewUrlParser: true });
 // создаем объект MongoClient и передаем ему строку подключения
 
+var admin = require("firebase-admin");
+
+// var serviceAccount = require("teslafilament-firebase-adminsdk-dmnvd-0b79be2485");
+var serviceAccount = require("./buzoni-af009-firebase-adminsdk-p1b9r-ff3ce0a579.json");
+admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+    databaseURL: "https://buzoni-af009.firebaseio.com"
+});
 
 
 
@@ -166,4 +174,48 @@ mongoClient.connect(function(err, client){
 });
 }
 
+
+app.post('/sendfcm',(req,res)=>{
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    let title="";
+    let msg="";
+
+    let body = '';
+    req.on('data', chunk => {
+        body += chunk.toString(); // convert Buffer to string
+    });
+    req.on('end', () => {
+        var post = qs.parse(body);
+
+        console.log(body);
+        title=post.title;
+        msg=post.msg;
+
+        sendmsg(title,msg,res);
+    });
+
+});
+
+function sendmsg(title,msg,res1){
+
+    var topic = 'news';
+    var message = {
+        notification: {
+            title: title,
+            body: msg
+        },
+        topic: topic
+    };
+
+    admin.messaging().send(message).then(res=>{
+        console.log("Success",res)
+        res1.end(JSON.stringify({ msg: "OK" }));
+
+    }).catch(err=>{
+        console.log("Error:",err)
+        res1.end(JSON.stringify({ msg: "Error" }));
+    })
+
+}
 
